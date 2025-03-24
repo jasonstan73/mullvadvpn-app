@@ -42,8 +42,6 @@ jobs:
         config:
           - os: windows-latest
             arch: x64
-          - os: [self-hosted, ARM64, Windows]
-            arch: arm64
     runs-on: ${{ matrix.config.os }}
     steps:
       - name: Checkout repository

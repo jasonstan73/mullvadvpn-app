@@ -26,6 +26,7 @@ pub static ALLOWED_LAN_NETS: LazyLock<[IpNetwork; 6]> = LazyLock::new(|| {
         IpNetwork::V4(Ipv4Network::new(Ipv4Addr::new(172, 16, 0, 0), 12).unwrap()),
         IpNetwork::V4(Ipv4Network::new(Ipv4Addr::new(192, 168, 0, 0), 16).unwrap()),
         IpNetwork::V4(Ipv4Network::new(Ipv4Addr::new(169, 254, 0, 0), 16).unwrap()),
+        IpNetwork::V4(Ipv4Network::new(Ipv4Addr::new(100, 64, 0, 0), 16).unwrap()),
         IpNetwork::V6(Ipv6Network::new(Ipv6Addr::new(0xfe80, 0, 0, 0, 0, 0, 0, 0), 10).unwrap()),
         IpNetwork::V6(Ipv6Network::new(Ipv6Addr::new(0xfc00, 0, 0, 0, 0, 0, 0, 0), 7).unwrap()),
     ]
